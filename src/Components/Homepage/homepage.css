@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Lora:ital,wght@0,400;0,600;1,400;1,600&family=Ubuntu:ital,wght@0,300;0,400;0,700;1,400&display=swap");
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #222831;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1rem;
+}
+
+#carouselExampleCaptions {
+  transition: 1s ease-in-out;
+}
+
+#top-card {
+  overflow: hidden;
+}
+
+.img-fluid {
+  transition: 0.5s ease-in-out;
+}
+
+.img-fluid:hover {
+  transform: scale(1.05);
+}
+
+#title-homepage {
+  font-family: "Black Ops One", sans-serif;
+  font-size: 4rem;
+  background-image: linear-gradient(
+    to right,
+    #ffffff,
+    #f5f5ff,
+    #eaebff,
+    #dde2ff,
+    #cddaff,
+    #cddaff,
+    #cddaff,
+    #cddaff,
+    #dde2ff,
+    #eaebff,
+    #f5f5ff,
+    #ffffff
+  );
+  color: #232d3f;
+}
+
+#carouselExampleCaptions img {
+  height: 450px;
+}
+
+#carousel-indicators {
+  width: 25%;
+  height: 25%;
+}
+
+.carousel-caption {
+  padding: 1% !important;
+  background: rgba(0, 0, 0, 0.3);
+  transition: 0.3s ease;
+}
+
+.carousel-caption:hover {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+#featured-title {
+  font-size: 2.5rem;
+  padding: 0.2rem;
+  font-family: "Black Ops One", sans-serif;
+  letter-spacing: 0.3rem;
+  color: whitesmoke !important;
+}
+
+.card {
+  background-color: #eeeeee;
+  color: black;
+}
+
+#featured .card {
+  height: 80vh;
+}
+
+#consoles .card {
+  border: none;
+  overflow: hidden;
+  height: 100vh;
+}
+
+#graphic-cards .card {
+  border: none;
+  overflow: hidden;
+}
+
+#processors .card {
+  border: none;
+  overflow: hidden;
+  height: 45vh;
+}
+
+#gaming-laptops img {
+  height: 65%;
+}
+
+#gaming-laptops .card {
+  border: none;
+  overflow: hidden;
+  height: 47vh;
+}
+
+@media (max-width: 575.98px) {
+  #title-homepage {
+    font-size: 2rem;
+    line-height: 4rem;
+  }
+
+  #top-area {
+    display: block !important;
+  }
+
+  #carouselExampleCaptions {
+    height: 18rem;
+  }
+
+  #carouselExampleCaptions img {
+    height: 18rem;
+  }
+
+  #top-card {
+    width: auto !important;
+    height: auto !important;
+    line-height: 1;
+    font-size: 0.8rem;
+  }
+
+  .card-title {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+
+  #top-card .card-title {
+    font-size: 0.85rem;
+    font-weight: bold;
+  }
+
+  #featured .card {
+    height: auto;
+    font-size: 0.85rem;
+  }
+
+  #consoles h2 {
+    width: 50% !important;
+  }
+
+  #consoles .card {
+    height: auto !important;
+    font-size: 0.9rem;
+  }
+
+  #consoles img {
+    height: 100% !important;
+  }
+
+  #graphic-cards h2 {
+    width: 75% !important;
+  }
+
+  #graphic-cards .card {
+    height: auto !important;
+    font-size: 0.9rem;
+  }
+
+  #graphic-cards img {
+    height: 100% !important;
+  }
+
+  #processors h2 {
+    width: 75% !important;
+  }
+
+  #processors .card {
+    height: auto !important;
+    font-size: 0.9rem;
+  }
+
+  #processors img {
+    height: 100% !important;
+  }
+
+  #gaming-laptops h2 {
+    width: 75% !important;
+  }
+
+  #gaming-laptops .card {
+    height: auto !important;
+    font-size: 0.9rem;
+  }
+
+  #gaming-laptops img {
+    height: 100% !important;
+  }
+}

@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Lora:ital,wght@0,400;0,600;1,400;1,600&family=Ubuntu:ital,wght@0,300;0,400;0,700;1,400&display=swap");
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #222831;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1rem;
+}
+
+card {
+  border: none;
+}
