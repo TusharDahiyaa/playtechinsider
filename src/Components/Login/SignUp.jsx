@@ -107,13 +107,19 @@ export default function SignUp() {
     }
   };
 
+  const isMobile = window.matchMedia("(max-width: 575px)").matches;
+
   return (
-    <LoginBackground className="p-5">
+    <LoginBackground className={isMobile ? "p-2" : "p-5"}>
       <div className="container text-light">
         <h1 className="text-center my-4 border border-5 p-2">Sign Up</h1>
         <form
           onSubmit={handleSubmit}
-          className="w-50 mx-auto border border-5 py-4 px-3"
+          className={
+            isMobile
+              ? "mx-auto border border-5 py-4 px-2 mb-5"
+              : "w-50 mx-auto border border-5 py-4 px-3 mb-5"
+          }
         >
           <input
             type="hidden"

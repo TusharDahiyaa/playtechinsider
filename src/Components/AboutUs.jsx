@@ -169,6 +169,7 @@ export default function AboutUs() {
                 src="./images/redd-f-YYMVV-qMD6Q-unsplash.jpg"
                 alt=""
                 style={{ width: 400, height: 450 }}
+                className="mt-3 ms-3"
               />
               <div>
                 <HeadingAboutH2>Our Product Range</HeadingAboutH2>

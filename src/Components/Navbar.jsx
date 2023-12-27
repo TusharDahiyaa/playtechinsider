@@ -196,7 +196,11 @@ export default function Navbar() {
                 </>
               ) : (
                 <a
-                  className="nav-link position-absolute end-0 mx-5"
+                  className={
+                    isMobile
+                      ? "nav-link"
+                      : "nav-link position-absolute end-0 mx-5"
+                  }
                   href="/login"
                   id="loginText"
                 >

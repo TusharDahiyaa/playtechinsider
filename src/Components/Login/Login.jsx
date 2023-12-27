@@ -81,12 +81,18 @@ export default function Login() {
     }
   };
 
+  const isMobile = window.matchMedia("(max-width: 575px)").matches;
+
   return (
-    <LoginBackground className="p-5">
+    <LoginBackground className={isMobile ? "p-2" : "p-5"}>
       <div className="container text-light">
         <h1 className=" text-center my-4 border border-5 p-2">Login</h1>
         <form
-          className="w-50 mx-auto border border-5 rounded px-3 py-3"
+          className={
+            isMobile
+              ? "mx-auto border border-5 rounded px-2 py-2 mb-5"
+              : "w-50 mx-auto border border-5 rounded px-3 py-3 mb-5"
+          }
           onSubmit={handleLogin}
         >
           <input type="hidden" name="_csrfToken" value={window.csrf} />

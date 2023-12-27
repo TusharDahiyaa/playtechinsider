@@ -56,13 +56,19 @@ export default function ForgetPassword() {
     }
   };
 
+  const isMobile = window.matchMedia("(max-width: 575px)").matches;
+
   return (
-    <LoginBackground className="p-5">
+    <LoginBackground className={isMobile ? "p-2" : "p-5"}>
       <div className="container text-light">
         <h1 className="text-center my-4 border border-5 p-2">Reset Password</h1>
         <form
           onSubmit={handleSubmit}
-          className="w-50 py-4 px-3 mx-auto border border-5"
+          className={
+            isMobile
+              ? "py-4 px-2 mx-auto border border-5 mb-5"
+              : "w-50 py-4 px-3 mx-auto border border-5 mb-5"
+          }
         >
           <label htmlFor="inputEmail4" className="form-label">
             Email address
@@ -71,6 +77,7 @@ export default function ForgetPassword() {
             type="email"
             className="form-control mb-3"
             id="inputEmail4"
+            placeholder="Enter your email address"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             autoComplete="on"
